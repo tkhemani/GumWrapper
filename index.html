@@ -1,31 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes">
-    <title>WebRTC example</title>
-</head>
-<body>
-    <h1>WebRTC Responsive example</h1>
-<ul id="nav">
-   <li><a data-email="chriscoyier@gmail.com" href="mailto:chriscoyier@gmail.com">Chris Coyier</a></li>
-   <li><a data-email="isuredo@likeher.com" href="mailto:isuredo@likeher.com">Elisabeth Moss</a></li>
-   <li><a data-email="marry@me.com" href="mailto:marry@me.com">Amanda Righetti</a></li>
-</ul>
-    <video id="myVideo"></video>
 
-    <script src="gumwrapper.min.js"></script>
-    <script>
-    (function() {
-        function showSuccess(video) {
-            alert('Hey, it works! Dimensions: ' + video.videoWidth + ' x ' + video.videoHeight);
-        }
-        function showError(error) {
-            alert('Oops: ' + error.message);
-        }
-        var gum = new GumWrapper({video: 'myVideo'}, showSuccess, showError);
-        gum.play();
-    })();
-    </script>
-</body>
+
+
+<html>
+    <meta charset="utf-8" />
+
+    <head>
+
+      <title>CSS3 MEDIA QUERIES</title>
+      <link href="style.css" rel="stylesheet"/>
+       <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <div id="header">
+                
+                <center>
+                    <img src="http://www.webtuts.info/wp-content/uploads/2011/11/logo1.png" id="logo"/><h2>Resize your browser to check its responsiveness</h2>
+                </center>
+            </div>
+            
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Stream</a></li>
+                    <li><a href="#">Lab</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <p>
+                Responsive Css for a web site will increase a websites visitors by attracting the mobile and tablet visitors also along with the vistors who enjoy thier post in desktop version.Now the number of people who are using the tablets and mobiles to browse the web are increasing.Hence a web page layout should be adaptable for all the view port of the device in which the visitor views the webpage.Some of the tips and tricks for the designers to keep in mind when they design a responsive webpages are given below.This will be a prefect resource for responsive web design tutorial in web.
+
+First we should look at a website with responsive layout  for inspiration and could analyse what all the things that are followed in it. In web there are lots of good responsive websites.One among is http://danielvane.com/ . Designer has really worked on its flexiblity.
+                </p>
+            </div>
+            <div id="sidebar">
+                <h2>LIKE US</h2>
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FWebtutsinfo%2F270801249647033&amp;width=270&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=169185699830105" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:99%; max-height:258px;" allowtransparency="true"></iframe>
+                <h2>SUBSCRIBE US</h2>
+                <form class="newsletter-form fl" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=webtuts/GloZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+    			<input class="email" type="text" name="email" value="E-mail" onfocus="if (this.value == 'E-mail') {this.value = '';}" onblur="if (this.value == '') {this.value = 'E-mail';}">
+				<input type="hidden" value="webtuts/GloZ" name="uri">
+				<input type="hidden" value="WEBTUTS" name="title">
+				<input type="hidden" name="loc" value="en_US">			
+				<input class="submit button" type="submit" name="submit" value="Submit">
+		</form>
+            </div>
+            
+        </div>
+        
+
+       
+    </body>
 </html>
